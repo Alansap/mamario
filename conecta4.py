@@ -21,11 +21,17 @@ def tablero(x,y):
         for j in range(y):
             tablero[i].append(' ')
     return tablero
+    
+    ###Hay que hacer aqui la funcion check wi, que busque las putas lineas completas en la posicion y para el turno que se le da
+    
+def checkwin(tablero, fila, columna, turno)
+
 
 def colocar_ficha(tablero, columna, turno):
     for i in range(len(tablero[0])-1, 0, -1):
         if tablero[i][columna-1]==' ':
             tablero[i][columna-1] = turno
+            checkwin(tablero, i, columna,turno)
             break
 empate = False
 jug = 1;
